@@ -74,10 +74,10 @@ define_keymap(None,{
     K("RC-Q"): K("Alt-F4"),
     K("RC-H"): K("Alt-F9"),
     # Cmd Tab - App Switching Default
-    K("RC-Tab"): K("RC-F13"),                     # Default not-xfce4
-    K("RC-Shift-Tab"): K("RC-Shift-F13"),         # Default not-xfce4
-    K("RC-Grave"): K("M-F6"),                     # Default not-xfce4
-    K("RC-Shift-Grave"): K("M-Shift-F6"),         # Default not-xfce4
+    #K("RC-Tab"): K("RC-F13"),                     # Default not-xfce4
+    #K("RC-Shift-Tab"): K("RC-Shift-F13"),         # Default not-xfce4
+    #K("RC-Grave"): K("M-F6"),                     # Default not-xfce4
+    #K("RC-Shift-Grave"): K("M-Shift-F6"),         # Default not-xfce4
     # K("RC-Tab"): K("RC-backslash"),               # xfce4
     # K("RC-Shift-Tab"): K("RC-Shift-backslash"),   # xfce4
     # K("RC-Grave"): K("RC-Shift-backslash"),       # xfce4
@@ -85,8 +85,8 @@ define_keymap(None,{
     # K("M-Tab"): K("C-Tab"),                       # Chromebook - In-App Tab switching
     # K("M-Shift-Tab"): K("C-Shift-Tab"),           # Chromebook - In-App Tab switching
     # K("M-Grave") : K("C-Shift-Tab"),              # Chromebook - In-App Tab switching
-    K("Super-Tab"): K("LC-Tab"),                  # Default not-chromebook
-    K("Super-Shift-Tab"): K("LC-Shift-Tab"),      # Default not-chromebook
+    #K("Super-Tab"): K("LC-Tab"),                  # Default not-chromebook
+    #K("Super-Shift-Tab"): K("LC-Shift-Tab"),      # Default not-chromebook
 
     # Wordwise
     K("RC-Left"): K("Home"),                      # Beginning of Line
@@ -104,10 +104,10 @@ define_keymap(None,{
     K("RC-Down"): K("C-End"),                     # End of File
     K("RC-Shift-Down"): K("C-Shift-End"),         # Select all to End of File
     # K("M-Backspace"): K("Delete"),                # Chromebook - Delete
-    K("Super-Backspace"): K("C-Backspace"),       # Default not-chromebook - Delete Left Word of Cursor
-    K("Super-Delete"): K("C-Delete"),             # Default not-chromebook - Delete Right Word of Cursor
-    K("Alt-Backspace"): K("C-Backspace"),       # Default not-chromebook - Delete Left Word of Cursor
-    K("Alt-Delete"): K("C-Delete"),             # Default not-chromebook - Delete Right Word of Cursor
+    #K("Super-Backspace"): K("C-Backspace"),       # Default not-chromebook - Delete Left Word of Cursor
+    #K("Super-Delete"): K("C-Delete"),             # Default not-chromebook - Delete Right Word of Cursor
+    #K("Alt-Backspace"): K("C-Backspace"),       # Default not-chromebook - Delete Left Word of Cursor
+    #K("Alt-Delete"): K("C-Delete"),             # Default not-chromebook - Delete Right Word of Cursor
     # K(""): pass_through_key,                      # cancel
     # K(""): K(""),                                 #
 })
@@ -235,28 +235,28 @@ define_keymap(re.compile("Sublime_text", re.IGNORECASE),{
 
 define_keymap(re.compile("konsole", re.IGNORECASE),{
     # Ctrl Tab - In App Tab Switching
-    K("LC-Tab") : K("Shift-Right"),
-    K("LC-Shift-Tab") : K("Shift-Left"),
-    K("LC-Grave") : K("Shift-Left"),
+    #K("LC-Tab") : K("Shift-Right"),
+    #K("LC-Shift-Tab") : K("Shift-Left"),
+    #K("LC-Grave") : K("Shift-Left"),
 
 }, "Konsole tab switching")
 
 define_keymap(re.compile("Io.elementary.terminal|kitty", re.IGNORECASE),{
     # Ctrl Tab - In App Tab Switching
-    K("LC-Tab") : K("LC-Shift-Right"),
-    K("LC-Shift-Tab") : K("LC-Shift-Left"),
-    K("LC-Grave") : K("LC-Shift-Left"),
+    #K("LC-Tab") : K("LC-Shift-Right"),
+    #K("LC-Shift-Tab") : K("LC-Shift-Left"),
+    #K("LC-Grave") : K("LC-Shift-Left"),
 
 }, "Elementary Terminal tab switching")
 
 define_keymap(re.compile(termStr, re.IGNORECASE),{
     # Ctrl Tab - In App Tab Switching
-    K("LC-Tab") : K("LC-PAGE_DOWN"),
-    K("LC-Shift-Tab") : K("LC-PAGE_UP"),
-    K("LC-Grave") : K("LC-PAGE_UP"),
+    #K("LC-Tab") : K("LC-PAGE_DOWN"),
+    #K("LC-Shift-Tab") : K("LC-PAGE_UP"),
+    #K("LC-Grave") : K("LC-PAGE_UP"),
     # Converts Cmd to use Ctrl-Shift
-    K("RC-Tab"): K("RC-F13"),
-    K("RC-Shift-Tab"): K("RC-Shift-F13"),
+    #K("RC-Tab"): K("RC-F13"),
+    #K("RC-Shift-Tab"): K("RC-Shift-F13"),
     K("RC-V"): K("C-Shift-V"),
     K("RC-MINUS"): K("C-Shift-MINUS"),
     K("RC-EQUAL"): K("C-Shift-EQUAL"),
